@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Function to load city and name from storage and fetch weather
     function loadSettings() {
         chrome.storage.sync.get(['city', 'userName'], function(result) {
-            const city = result.city || 'Scroll Down to Set'; // Default city is Mumbai
+            const city = result.city || 'Mumbai'; // Default city is Mumbai
             const userName = result.userName || 'Scroll Down to Set'; // Default username is Tanmay
 
             cityInput.value = city;
